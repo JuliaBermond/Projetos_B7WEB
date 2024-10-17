@@ -1,0 +1,40 @@
+/* PROJETO LUTA */
+.bar{
+    width: 10%;
+}
+
+.fightArea{
+    display: flex;
+    gap: 20px;
+}
+
+#char, #monster{
+    flex: 1;
+}
+
+.lifeBar{
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.lifeBar .bar{
+    height: inherit;
+    background-color: rgb(231, 7, 7);
+    border-radius: inherit;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.log{
+    border: 1px solid #999;
+    height: 200px;
+    overflow-y: scroll;
+}
