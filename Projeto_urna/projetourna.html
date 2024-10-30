@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projetourna.css" />
+    <title>URNA ELETRÔNICA</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="divisao-1">
+                <div class="divisao-1-left">
+                    <div class="divisao-1-left-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="divisao-1-left-2">
+                        <span>PRESIDENTE</span>
+                    </div>
+                    <div class="divisao-1-left-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="divisao-1-left-4">
+                        Nome: Fulano de tal<br>
+                        Partido: QQQ<br>
+                        Vice-presidente: fulano
+                        
+                    </div>
+                </div>
+                <div class="divisao-1-right">
+                    <div class="divisao-1-right-images">
+                        <img src="84.jpg" alt=""/>
+                        PRESIDENTE
+                    </div>
+                    <div class="divisao-1-right-images small">
+                        <img src="84_2.jpg" alt=""/>
+                        VICE-PRESIDENTE
+                    </div>
+                </div>
+            </div>
+            <div class="divisao-2">
+                Aperte a tela: <br/>
+                CONFIRMA para CONFIRMAR este voto <br/>
+                CORRIGE para REINICIAR o voto <br/>
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('1')">1</div>
+                <div class="teclado--botao" onclick="clicou('2')">2</div>
+                <div class="teclado--botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('4')">4</div>
+                <div class="teclado--botao" onclick="clicou('5')">5</div>
+                <div class="teclado--botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('7')">7</div>
+                <div class="teclado--botao" onclick="clicou('8')">8</div>
+                <div class="teclado--botao" onclick="clicou('9')">9</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" id="branco" onclick="branco()">BRANCO</div>
+                <div class="teclado--botao" id="corrige" onclick="corrige()">CORRIGE</div>
+                <div class="teclado--botao" id="confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="projetourna.js"></script>
+
+</body>
+</html>
